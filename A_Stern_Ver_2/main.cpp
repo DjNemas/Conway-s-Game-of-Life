@@ -109,9 +109,9 @@ char*** Create_GameFieldDynArray(int grafik_buffer, int gamefield_height, int ga
 
 void Delete_GameFieldDynArray(char*** gameFieldDynArray, int grafik_buffer, int gamefield_height, int gamefield_width)
 {
-	for (int i = 0; i < gamefield_height; i++)
+	for (int i = 0; i < grafik_buffer; i++)
 	{
-		for (int j = 0; j < gamefield_width; j++)
+		for (int j = 0; j < gamefield_height; j++)
 		{
 			delete[] gameFieldDynArray[i][j];
 		}
